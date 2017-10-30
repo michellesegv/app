@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.michelleseguil.app.base"
+        tools:showIn="@layout/activity_base">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/logo-container"
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:orientation="vertical" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription=""
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/button-container"
+        android:layout_width="match_parent"
+        android:layout_height="50pt"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="45dp">
+
+        <Button
+            android:id="@+id/button-animes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f44336"
+            android:text="Animes" />
+
+        <Button
+            android:id="@+id/button-dorama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f44336"
+            android:text="Doramas" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
