@@ -6,41 +6,84 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.michelleseguil.app.base"
-        tools:showIn="@layout/activity_base">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/logo-container"
-        android:layout_width="match_parent"
-        android:layout_height="20pt"
-        android:orientation="vertical" >
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription=""
-            android:gravity="center"
-            android:scaleType="centerInside"
-            android:src="@drawable/logo" />
-    </LinearLayout>
+    tools:showIn="@layout/activity_base">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/button-container"
-        android:layout_width="match_parent"
-        android:layout_height="50pt"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="45dp">
 
-        <Button
-            android:id="@+id/button-animes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#f44336"
-            android:text="Animes" />
+    <GridLayout
+        android:layout_width="376dp"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
-        <Button
-            android:id="@+id/button-dorama"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#f44336"
-            android:text="Doramas" />
-    </LinearLayout>
+            android:layout_height="196dp"
+            android:layout_row="3"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="98dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription=""
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logo_verde" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+                <Button
+                    android:id="@+id/button-dorama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#f44336"
+                    android:text="Doramas" />
+
+                <Button
+                    android:id="@+id/button-animes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#f44336"
+                    android:text="Animes" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+
 </android.support.constraint.ConstraintLayout>
