@@ -5,19 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.michelleseguil.app.base"
-    tools:showIn="@layout/activity_base">
-<!--
+    tools:context="com.example.michelleseguil.app.FirstActivity"
+    tools:showIn="@layout/app_bar_first">
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/ScrollView01"
+        android:background="@color/whiteGray"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
         <GridLayout
-        android:layout_width="376dp"
-        android:layout_height="0dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+            android:layout_width="376dp"
+            android:layout_height="0dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -29,10 +29,10 @@
                 tools:layout_editor_absoluteY="98dp">
 
                 <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="41dp"
-                android:layout_marginTop="15dp"
-                android:orientation="horizontal">
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -45,9 +45,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -56,6 +56,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textColor="@color/darkBlack"
+                        android:textColorHint="@color/darkBlack"
                         android:hint="Escribe el nombre de tu serie"
                         android:inputType="textPersonName"
                         android:text="" />
@@ -63,10 +65,10 @@
                 </LinearLayout>
 
                 <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:orientation="horizontal">>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/textViewCategories"
@@ -74,58 +76,59 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginLeft="5dp"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/darkBlack"
                         android:textSize="20dp"
                         android:text="Categories" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                android:layout_width="wrap_content"
+                    android:layout_width="wrap_content"
                     android:gravity="center"
 
                     android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button-animes"
+                        android:id="@+id/buttonAnimes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#000"
+                        android:background="@color/darkBlack"
                         android:text="Animes"
-                        android:textColor="#00ff86" />
+                        android:textColor="@color/likeBeige" />
 
                     <Button
                         android:id="@+id/button-dorama"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#000"
+                        android:background="@color/darkBlack"
                         android:text="Doramas"
-                        android:textColor="#00ff86" />
+                        android:textColor="@color/likeBeige" />
 
                     <Button
                         android:id="@+id/button-comedy"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#000"
+                        android:background="@color/darkBlack"
                         android:text="Comedy"
-                        android:textColor="#00ff86" />
+                        android:textColor="@color/likeBeige" />
 
                     <Button
                         android:id="@+id/button-variety"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#000"
+                        android:background="@color/darkBlack"
                         android:text="Variety"
-                        android:textColor="#00ff86" />
+                        android:textColor="@color/likeBeige" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -133,34 +136,34 @@
                         android:layout_weight="1"
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="15dp"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/darkGreen"
                         android:textSize="20dp"
                         android:text="Destacados" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <TableLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
 
                         <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@color/colorAccent"
+                                android:background="@color/darkGreen"
                                 android:layout_margin="5dp"
                                 android:gravity="center"
                                 android:orientation="vertical">
                                 <ImageView
-                                    android:layout_width="170dp"
+                                    android:layout_width="173dp"
                                     android:layout_height="130dp"
                                     android:contentDescription="Naruto"
                                     android:scaleType="centerInside"
@@ -170,7 +173,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:layout_marginTop="15dp"
-                                    android:textColor="@color/colorPrimary"
+                                    android:textColor="@color/likeBeige"
                                     android:textSize="20dp"
                                     android:text="Naruto" />
 
@@ -182,11 +185,11 @@
                                 android:gravity="center"
 
                                 android:layout_height="wrap_content"
-                                android:background="@color/colorAccent"
+                                android:background="@color/darkGreen"
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="170dp"
+                                    android:layout_width="173dp"
                                     android:layout_height="130dp"
                                     android:contentDescription="Naruto"
                                     android:scaleType="centerInside"
@@ -196,7 +199,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:layout_marginTop="15dp"
-                                    android:textColor="@color/colorPrimary"
+                                    android:textColor="@color/likeBeige"
                                     android:textSize="20dp"
                                     android:text="Dragon Ball Z" />
 
@@ -204,18 +207,18 @@
                         </TableRow>
 
                         <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_margin="5dp"
                                 android:gravity="center"
                                 android:layout_height="wrap_content"
-                                android:background="@color/colorAccent"
+                                android:background="@color/darkGreen"
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="170dp"
+                                    android:layout_width="173dp"
                                     android:layout_height="130dp"
                                     android:contentDescription="Naruto"
                                     android:scaleType="centerInside"
@@ -225,7 +228,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:layout_marginTop="15dp"
-                                    android:textColor="@color/colorPrimary"
+                                    android:textColor="@color/likeBeige"
                                     android:textSize="20dp"
                                     android:text="Supergirl" />
 
@@ -235,11 +238,11 @@
                                 android:layout_margin="5dp"
                                 android:gravity="center"
                                 android:layout_height="wrap_content"
-                                android:background="@color/colorAccent"
+                                android:background="@color/darkGreen"
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="170dp"
+                                    android:layout_width="173dp"
                                     android:layout_height="130dp"
                                     android:contentDescription="Boruto"
                                     android:scaleType="centerInside"
@@ -249,7 +252,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:layout_marginTop="15dp"
-                                    android:textColor="@color/colorPrimary"
+                                    android:textColor="@color/likeBeige"
                                     android:textSize="20dp"
                                     android:text="Boruto" />
 
@@ -259,7 +262,5 @@
                 </LinearLayout>
             </LinearLayout>
         </GridLayout>
-    </ScrollView>-->
-
-
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>
